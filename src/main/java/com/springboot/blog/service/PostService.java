@@ -1,11 +1,11 @@
 package com.springboot.blog.service;
 
 import com.springboot.blog.payload.PostDto;
-import java.util.List;
+import com.springboot.blog.payload.PostResponse;
 
 public interface PostService {
     PostDto createPost(PostDto postDto);
-    List<PostDto> getAllPost(int pageNo, int pageSize);
+    PostResponse getAllPost(int pageNo, int pageSize);
     PostDto getPostById(Long id);
     PostDto updatePost(PostDto postDto, Long id);
     void deletePostById(Long id);
